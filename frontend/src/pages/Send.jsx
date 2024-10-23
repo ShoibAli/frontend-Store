@@ -37,7 +37,7 @@ function Send() {
           <button
             onClick={() => {
               axios.post(
-                "http://localhost:3000/api/v1/account/transfer",
+                "https://backend-store-zeta.vercel.app/api/v1/account/transfer",
                 {
                   to: id,
                   amount,

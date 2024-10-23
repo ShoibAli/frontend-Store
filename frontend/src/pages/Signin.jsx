@@ -37,7 +37,7 @@ function Signin() {
               console.log(username);
               console.log(password);
               const response = await axios.post(
-                "http://localhost:3000/api/v1/user/signin",
+                "https://backend-store-zeta.vercel.app/api/v1/user/signin",
                 {
                   username,
                   password,
@@ -50,7 +50,7 @@ function Signin() {
             }}
             text={"Sign in"}
           ></Button>
-          <Footer text={"Don't have an account?"} to={"/signup"}></Footer>
+          <Footer text={"Don't have an account?"} to={"/"}></Footer>
         </div>
       </div>
     </div>

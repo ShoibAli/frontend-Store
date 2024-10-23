@@ -49,7 +49,7 @@ function Signup() {
           <Button
             onClick={async () => {
               const response = await axios.post(
-                "http://localhost:3000/api/v1/user/signup",
+                "https://backend-store-zeta.vercel.app/api/v1/user/signup",
                 {
                   username,
                   firstname,

@@ -8,7 +8,10 @@ function Users() {
   const [filter, Setfilter] = useState("");
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/v1/user/bulk?filter=" + filter)
+      .get(
+        "https://backend-store-zeta.vercel.app/api/v1/user/bulk?filter=" +
+          filter
+      )
       .then((response) => {
         Setusers(response.data.user);
       });
